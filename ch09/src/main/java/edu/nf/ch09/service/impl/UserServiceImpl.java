@@ -5,14 +5,15 @@ import edu.nf.ch09.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 /**
  * @author Administrator
  * @date 2020/12/3
  */
 //@Component
-//可以使用@Repository注解来标识dao层
-@Repository("userService")
+//可以使用@Service注解来标识业务层
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
     private UserDao userDao;
